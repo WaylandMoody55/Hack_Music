@@ -68,42 +68,49 @@ public class MainActivity extends AppCompatActivity {
         G3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mediaPlayerG3.seekTo(0);
                 mediaPlayerG3.start();
             }
         });
         C5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mediaPlayerC5.seekTo(0);
                 mediaPlayerC5.start();
             }
         });
         C6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mediaPlayerC6.seekTo(0);
                 mediaPlayerC6.start();
             }
         });
         C4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mediaPlayerC4.seekTo(0);
                 mediaPlayerC4.start();
             }
         });
         G4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mediaPlayerG4.seekTo(0);
                 mediaPlayerG4.start();
             }
         });
         G5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mediaPlayerG5.seekTo(0);
                 mediaPlayerG5.start();
             }
         });
         G6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mediaPlayerG6.seekTo(0);
                 mediaPlayerG6.start();
             }
         });
