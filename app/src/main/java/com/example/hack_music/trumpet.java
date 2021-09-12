@@ -2,12 +2,16 @@ package com.example.hack_music;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 public class trumpet extends AppCompatActivity {
+    private Button flute;
+    private Button piano;
+    private Button violin;
     private Button trumpet_G3;
     private Button trumpet_C5;
     private Button trumpet_C6;
@@ -19,6 +23,10 @@ public class trumpet extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trumpet);
+
+        flute = findViewById(R.id.flute);
+        piano = findViewById(R.id.piano);
+        violin = findViewById(R.id.violin);
 
         trumpet_G3 = findViewById(R.id.trumpet_G3);
         trumpet_C5 = findViewById(R.id.trumpet_C5);
@@ -34,6 +42,24 @@ public class trumpet extends AppCompatActivity {
         final MediaPlayer mediaPlayer_trumpetG4 = MediaPlayer.create( this, R.raw.trumpet_g4);
         final MediaPlayer mediaPlayer_trumpetG5 = MediaPlayer.create( this, R.raw.trumpet_g5);
 
+        flute.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFlute();
+            }
+        });
+        violin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openViolin();
+            }
+        });
+        piano.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openPiano();
+            }
+        });
         trumpet_G3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -77,5 +103,19 @@ public class trumpet extends AppCompatActivity {
             }
         });
 
+    }
+    private void openPiano() {
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
+    }
+
+    private void openViolin() {
+        Intent intent = new Intent(this,violin.class);
+        startActivity(intent);
+    }
+
+    private void openFlute() {
+        Intent intent = new Intent(this,flute.class);
+        startActivity(intent);
     }
 }

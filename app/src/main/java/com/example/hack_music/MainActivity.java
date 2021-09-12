@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         trumpet = findViewById(R.id.trumpet);
         violin = findViewById(R.id.violin);
         flute = findViewById(R.id.flute);
+
         G3 = findViewById(R.id.G3);
         C5 = findViewById(R.id.C5);
         C6 = findViewById(R.id.C6);

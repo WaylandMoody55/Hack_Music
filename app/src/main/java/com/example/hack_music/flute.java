@@ -22,6 +22,7 @@ public class flute extends AppCompatActivity {
     private Button G4;
     private Button G5;
     private Button G6;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +39,7 @@ public class flute extends AppCompatActivity {
         G5 = findViewById(R.id.G5);
         G6 = findViewById(R.id.G6);
 
-        final MediaPlayer mediaPlayerG3 = MediaPlayer.create( this, R.raw.piano);
+//        final MediaPlayer mediaPlayerG3 = MediaPlayer.create( this, R.raw.piano);
         final MediaPlayer mediaPlayerC5 = MediaPlayer.create( this, R.raw.flute_c5);
         final MediaPlayer mediaPlayerC6 = MediaPlayer.create( this, R.raw.flute_c6);
         final MediaPlayer mediaPlayerC4 = MediaPlayer.create( this, R.raw.flute_c4);
@@ -112,7 +113,7 @@ public class flute extends AppCompatActivity {
     }
 
     private void openPiano() {
-        Intent intent = new Intent(this,flute.class);
+        Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
     }
 
