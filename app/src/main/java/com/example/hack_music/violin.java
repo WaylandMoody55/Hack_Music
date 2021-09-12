@@ -19,7 +19,7 @@ public class violin extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_violin);
         button2 = findViewById(R.id.button2);
         trumpet = findViewById(R.id.trumpet);
         piano = findViewById(R.id.piano);
