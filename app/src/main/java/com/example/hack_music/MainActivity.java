@@ -20,17 +20,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button2 = findViewById(R.id.button2);
+
         trumpet = findViewById(R.id.trumpet);
         violin = findViewById(R.id.violin);
         flute = findViewById(R.id.flute);
-        final MediaPlayer mediaPlayer = MediaPlayer.create( this, R.raw.piano);
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mediaPlayer.start();
-            }
-        });
+
         trumpet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
