@@ -11,10 +11,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class violin extends AppCompatActivity {
     private Button button2;
     private Button trumpet;
-    private Button violin;
+    private Button piano;
     private Button flute;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         button2 = findViewById(R.id.button2);
         trumpet = findViewById(R.id.trumpet);
-        violin = findViewById(R.id.violin);
+        piano = findViewById(R.id.piano);
         flute = findViewById(R.id.flute);
         final MediaPlayer mediaPlayer = MediaPlayer.create( this, R.raw.piano);
         button2.setOnClickListener(new View.OnClickListener() {
@@ -37,10 +37,10 @@ public class MainActivity extends AppCompatActivity {
                 openTrumpet();
             }
         });
-        violin.setOnClickListener(new View.OnClickListener() {
+        piano.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openViolin();
+                openPiano();
             }
         });
         flute.setOnClickListener(new View.OnClickListener() {
@@ -56,8 +56,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void openViolin() {
-        Intent intent = new Intent(this,violin.class);
+    private void openPiano() {
+        Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
     }
 

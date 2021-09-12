@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Hack_Music/app/src/main/res/layout/activity_flute.xml" value="0.36666666666666664" />
         <entry key="..\:/Hack_Music/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Hack_Music/app/src/main/res/layout/activity_trumpet.xml" value="0.17037037037037037" />
+        <entry key="..\:/Hack_Music/app/src/main/res/layout/activity_violin.xml" value="0.36666666666666664" />
         <entry key="..\:/Hack_Music/app/src/main/res/layout/content_main.xml" value="0.28532608695652173" />
       </map>
     </option>

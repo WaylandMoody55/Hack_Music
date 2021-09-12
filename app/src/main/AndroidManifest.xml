@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Hack_Music">
         <activity
+            android:name=".violin"
+            android:exported="true" />
+        <activity
+            android:name=".flute"
+            android:exported="true" />
+        <activity
             android:name=".trumpet"
             android:exported="true" />
         <activity
