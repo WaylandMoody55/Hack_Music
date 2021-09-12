@@ -11,14 +11,14 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button button2;
+    private Button G3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button2 = findViewById(R.id.button2);
+        G3 = findViewById(R.id.G3);
         final MediaPlayer mediaPlayer = MediaPlayer.create( this, R.raw.piano);
-        button2.setOnClickListener(new View.OnClickListener() {
+        G3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mediaPlayer.start();
